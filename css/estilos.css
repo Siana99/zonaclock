@@ -1,0 +1,135 @@
+/* estilos.css */
+@charset "utf-8";
+.body {
+	background: #001421;
+}
+.img-logo {
+	width: 20%;
+	height: auto;
+	margin-right: 15%;
+	}
+	
+ 
+	
+.btn {
+	color: #000000;
+	background: #a0fc01;
+	margin-left: 5%;
+		
+	}
+
+.btn_02 {
+	color: #000000;
+	background: #a0fc01;
+	margin-left: 0%;
+		
+	}
+.bn1 {
+	color: #a0fc01; 
+}
+.carousel-caption {
+	padding-top: 10%;
+}
+
+.btn_03 {
+	padding-top: 70px;
+}
+	
+	
+.mi-boton {
+  background: #000000;
+  padding: 2%;	
+  padding-left: 100px;
+  align-items: center;
+}
+
+.nav-link {
+ color: #a0fc01;
+
+}
+
+.texto-destacado {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a0fc01;
+}
+
+.carouselExampleCaptions{
+	padding-bottom: 02%;
+}
+
+/* Planes y precios*/
+
+.image-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px; /* Espacio entre imágenes */
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-section img {
+      width: 25%;
+      height: auto;
+      object-fit: contain;
+    }
+
+
+
+
+
+/* planes y precios  02 */
+
+.content-box {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2c2c2c; /* Color de respaldo si la imagen no cubre */
+  height: 450px;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #a0fc01; /* Borde agregado */
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Alineado arriba */
+           /* Centrado horizontalmente align-items:;  */
+  text-align: center;           /* Centra los textos */
+}
+
+.content-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+  z-index: 0;
+}
+
+.content-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.content-box ul {
+  padding-left: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left; /* Opcional: si querés que la lista quede alineada a la izquierda */
+}
+
+.content-box button {
+  margin-top: 15px;
+}
+.content-box:hover {
+  box-shadow: 0 0 10px 5px rgba(160, 252, 1, 0.1); /* Brillo verde suave */
+  transform: scale(1.03); /* Pequeño zoom */
+  cursor: pointer;
+ }
+
+.content-box.small {
+  height: 340px;
+  transform: scale(0.95);
+}
