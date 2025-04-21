@@ -1,195 +1,310 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <!-- Carrosel -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZonaClock: Creamos sitios web que trabajan para vos. Diseño profesional, tiendas online, landing pages y más.">
+  <meta name="keywords" content="diseño web, páginas web, tiendas online, ecommerce, Argentina, ZonaClock">
+  <meta name="author" content="Nelson Vinachi">
+	<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZonaClock - Diseño Web Profesional</title>
+  <meta name="description" content="Diseñamos sitios web modernos, rápidos y optimizados para emprendedores y marcas en Argentina. Elegí tu plan ideal y llevá tu presencia online al siguiente nivel.">
+  <meta name="keywords" content="diseño web, páginas web, tiendas online, landing pages, Argentina, ZonaClock">
+  <meta name="author" content="ZonaClock" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	  
-	  <!-- Tu CSS personalizado -->
-  <link href="css/estilos.css" rel="stylesheet">
+  <!-- Preload & Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <title>ZonaClock</title>
-	  
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	  <style>
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles.min.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ZonaClock",
+    "url": "https://www.zonaclock.com",
+    "logo": "https://www.zonaclock.com/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61568930481993",
+      "https://www.instagram.com/zona_clock/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+54-9-11-1234-5678",
+      "contactType": "Customer Service",
+      "areaServed": "AR",
+      "availableLanguage": ["Spanish"]
+    }
+  }
+  </script>
+
+  <title>ZonaClock | Sitios Web Profesionales para Emprendedores</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <style>
     .swiper-slide {
-      width: 300px; /* Tamaño fijo para lograr el efecto de media imagen en extremos */
+      width: 300px;
       border-radius: 20px;
-		padding: 10px;
+      padding: 10px;
       overflow: hidden;
-		
-			
     }
 
     .swiper-slide img {
       width: 100%;
       height: auto;
       object-fit: cover;
-	
     }
   </style>
-	   
- </head>
-  <body class="body">
-	  
-	  <!-- Menú -->
-   <ul class="nav mi-boton" >
-		  
-		  <img src="images/zona.png"   class="img-logo"  alt="...">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">SERVICIOS</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">PORTAFOLIO</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">PLANES</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">CONTACTOS</a>
-  </li>
-	<button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
-</ul>
-	  <!-- Banner Principal -->
-	
-	  <img src="images/Banner-principal.jpg" class="img-fluid" alt="...">
-	  <div class="carousel-caption d-none d-md-block text-start start-50 translate-middle-y top-50 ps-50">
-		  
-		  
-        <h2 class="bn1">CREAMOS TU SITIOS WEB</h2>
-        <h2>QUE TRABAJAN PARA VOS!</h2>
-        <p>24/7 diseño/ ecommerce/ landing/ presentaciones.</p>
-        <button href="#" class="btn_02 btn btn-success rounded-pill">Ver más</button>
-	 </div>
-	  
-	   <!-- Socalo -->
-	  
-	<div class="position-relative text-center">
-  <img src="images/socalo.png" class="img-fluid w-100" alt="Imagen de fondo">
+</head>
 
-  <div class="position-absolute top-50 start-50 translate-middle text-black-50">
-    <p>Nos encargamos de tu web, así vos te enfocás en vender.</p>
-  
-  </div>
-</div>
-	  
-	   <!-- Portafolio -->
-	  <div class=" text-center text-white btn_03">
-		  
-		  
-    <h2 class="">MIRÁ LO QUE PODEMOS LOGRAR JUNTOS</h2>
+<body class="body">
+  <!-- HEADER -->
+  <header>
+    <nav class="nav mi-boton">
+      <img src="images/zona.png" class="img-logo" alt="Logo de ZonaClock">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portafolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+      </ul>
+      <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- Banner -->
+    <section>
+      <img src="images/Banner-principal.jpg" class="img-fluid" alt="Banner principal ZonaClock">
+      <div class="carousel-caption d-none d-md-block text-start start-50 translate-middle-y top-50 ps-50">
+        <h1 class="bn1">CREAMOS TUS SITIOS WEB</h1>
+        <h2>¡QUE TRABAJAN PARA VOS!</h2>
+        <p>24/7 diseño / ecommerce / landing / presentaciones</p>
+        <a href="#" class="btn_02 btn btn-success rounded-pill">Ver más</a>
+      </div>
+    </section>
+
+    <!-- Socalo -->
+    <section class="position-relative text-center">
+      <img src="images/socalo.png" class="img-fluid w-100" alt="Fondo informativo">
+      <div class="position-absolute top-50 start-50 translate-middle text-black-50">
+        <p>Nos encargamos de tu web, así vos te enfocás en vender.</p>
+      </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section class="text-center text-white btn_03">
+      <h2>MIRÁ LO QUE PODEMOS LOGRAR JUNTOS</h2>
       <p>Clientes felices, sitios funcionando</p>
-        
-	 </div> 
-	 
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="images/batman.png" alt="img1"></div>
-    <div class="swiper-slide"><img src="images/elclubdelamilanesa.png" alt="img2"></div>
-    <div class="swiper-slide"><img src="images/grupoalmar.png" alt="img3"></div>
-    <div class="swiper-slide"><img src="images/cafe.png" alt="img4"></div>
-    <div class="swiper-slide"><img src="images/criotomon.png" alt="img5"></div>
-    <div class="swiper-slide"><img src="images/producto.png" alt="img6"></div>
-  </div>
-	
-	<!-- Flechas -->
-  <div class="swiper-button-next-hidden"></div>
-  <div class="swiper-button-prev-hidden"></div>
-</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/batman.png" alt="Diseño Batman"></div>
+          <div class="swiper-slide"><img src="images/elclubdelamilanesa.png" alt="El Club de la Milanesa"></div>
+          <div class="swiper-slide"><img src="images/grupoalmar.png" alt="Grupo Almar"></div>
+          <div class="swiper-slide"><img src="images/cafe.png" alt="Sitio Café"></div>
+          <div class="swiper-slide"><img src="images/criotomon.png" alt="Cryotomon diseño web"></div>
+          <div class="swiper-slide"><img src="images/producto.png" alt="Diseño producto ecommerce"></div>
+        </div>
+      </div>
+    </section>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
-  });
-</script>
+    <!-- Planes -->
+    <section class="text-center text-white btn_03">
+      <h2>PLANES / PRECIOS</h2>
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Básica -->
+          <div class="col-12 col-md-4">
+            <div class="content-box" style="background: #10110f">
+              <h3>BÁSICA</h3>
+              <ul>
+                <li>Diseño web responsivo</li>
+                <li>Hasta 4 secciones</li>
+                <li>Mapa de ubicación</li>
+                <li>Redes sociales integradas</li>
+                <li>Entrega estimada: 7 días</li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <h4 class="mb-0">$250</h4><span> USD</span>
+              </div>
+              <button class="btn btn-success rounded-pill">LO QUIERO!</button>
+            </div>
+          </div>
+
+          <!-- Intermedia -->
+          <div class="col-12 col-md-4">
+            <div class="content-box">
+              <h3>INTERMEDIA</h3>
+              <ul>
+                <li>Todo lo de la Básica</li>
+                <li>Catálogo hasta 30 productos</li>
+                <li>Galería por producto</li>
+                <li>Formulario de pedido</li>
+                <li>SEO básico</li>
+                <li>Entrega: 10 días</li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <h4 class="mb-0">$400</h4><span> USD</span>
+              </div>
+              <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
+            </div>
+          </div>
+
+          <!-- Avanzada -->
+          <div class="col-12 col-md-4">
+            <div class="content-box" style="background: #10110f">
+              <h3>AVANZADA</h3>
+              <ul>
+                <li>Tienda Online completa</li>
+                <li>Todo lo de la Intermedia</li>
+                <li>Carrito de compras</li>
+                <li>Medios de pago integrados</li>
+                <li>Panel de gestión de productos</li>
+              </ul>
+              <div class="d-flex align-items-center">
+                <h4 class="mb-0">$500</h4><span> USD</span>
+              </div>
+              <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="container-fluid">
+      <div class="row half-section">
+        <div class="col-12 col-md-6 p-0">
+          <img src="images/mi_perfil.png" alt="Nelson Vinachi" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="col-12 col-md-6 content-side">
+          <img src="images/logito.png" alt="Logo Nelson Vinachi" class="logo-img">
+          <h4>Hola, soy Nelson Vinachi</h4>
+          <p>Diseñador gráfico con más de 10 años de experiencia creando marcas, piezas visuales y sitios web que realmente funcionan.</p>
+          <p>Me enfoco en entender tu negocio y tus objetivos para crear soluciones digitales efectivas y visualmente atractivas.</p>
+          <a href="#"><button class="btn_02 btn btn-success rounded-pill">Ver Portafolio</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="feature-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">NUESTROS SERVICIOS</h2>
+        <div class="row text-center">
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <img src="images/servicios_01.png" alt="Entregas rápidas" class="feature-img mb-3">
+            <h5>ENTREGAS RÁPIDAS</h5>
+            <p>Tu web lista en tiempo récord.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <img src="images/servicios_02.png" alt="Soporte técnico" class="feature-img mb-3">
+            <h5>SOPORTE REAL</h5>
+            <p>Acompañamos antes, durante y después.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <img src="images/servicios_03.png" alt="Diseño personalizado" class="feature-img mb-3">
+            <h5>ADAPTADO A TU NEGOCIO</h5>
+            <p>Diseñamos lo que vos necesitás.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <img src="images/servicios_04.png" alt="Diseños únicos" class="feature-img mb-3">
+            <h5>DISEÑOS ÚNICOS</h5>
+            <p>100% personalizados, nada de plantillas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <!-- Imagen -->
+      <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+        <img src="images/nelson.png" class="img-fluid w-50" alt="Nelson Vinachi">
+      </div>
+      <!-- Menú -->
+      <div class="col-12 col-md-4">
+        <h5>Secciones</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Inicio</a></li>
+          <li><a href="#" class="footer-link">Servicios</a></li>
+          <li><a href="#" class="footer-link">Productos</a></li>
+          <li><a href="#" class="footer-link">Nosotros</a></li>
+          <li><a href="#" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Contacto -->
+      <div class="col-12 col-md-4">
+        <img src="images/zona.png" alt="ZonaClock logo" class="img-fluid mb-3 w-50">
+        <p>Sitios web a medida para emprendedores y negocios.</p>
+        <p><strong>Tel:</strong> +54 9 11 6603 2960 / +54 9 11 6464 1184</p>
+		  
+        <p><strong>Email:</strong> davidvinachi@gmail.com</p>
+		 <P>SEGUINOS</P>
+		  
+      <a href="https://www.facebook.com/profile.php?id=61568930481993" target="_blank" class="text-white mx-2">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/zona_clock/" target="_blank" class="text-white mx-2">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    
+      </div>
+    </div>
+  </div>
   
-	 
-    <!-- Planes y precios  -->
-	  
-	   <div class=" text-center text-white btn_03">
-		  
-		  
-    <h2 class="btn_03">PLANES / PRECIOS </h2>
-		   
-        
-	 </div> 
-	  
-	 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Planes y precios 02 -->
-	  <div class="container py-5 ">
-  <div class="row g-4">
-
-    <!-- Columna 1 -->
-    <div class="col-12 col-md-4 ">
-      <div class="content-box small" style="background: #10110f">
-        <h2>BÁSICA&nbsp;</h2>
-        <ul>
-          <li>Diseño web responsivo (adaptable a celulares y tablets)</li>
-          <li>Hasta 4 secciones: inicio, servicios, productos, contacto</li>
-          <li>Mapa de ubicación (google maps)</li>
-		<li>Integración con redes sociales</li>
-			<li>Tiempo estimado de entrega: 7 días</li>
-        </ul>
-        <button class="btn btn-success rounded-pill">LO QUIERO!</button>
-      </div>
-    </div>
-
-    <!-- Columna 2 -->
-    <div class="col-12 col-md-4">
-      <div class="content-box" >
-        <h2>INTERMEDIA</h2>
-        <ul>
-          <li>Item uno</li>
-          <li>Item dos</li>
-          <li>Item tres</li>
-        </ul>
-        <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
-      </div>
-    </div>
-
-    <!-- Columna 3 -->
-    <div class="col-12 col-md-4 ">
-      <div class="content-box" style="background: #10110f">
-        <h2>AVANZADA</h2>
-        <ul>
-          <li>Item uno</li>
-          <li>Item dos</li>
-          <li>Item tres</li>
-        </ul>
-        <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
-      </div>
-    </div>
-
+  <!-- Sección de Derechos Reservados y Redes Sociales -->
+  <div class="footer-bottom bg-black py-3 text-center">
+    <p class="mb-0">2025 ZonaClock. Todos los derechos reservados.</p>
+    
   </div>
-</div>
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-	 
+</footer>
 
-
-  </body>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
 </html>
+
