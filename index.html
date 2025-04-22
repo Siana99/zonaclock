@@ -12,8 +12,12 @@
   <meta name="description" content="Diseñamos sitios web modernos, rápidos y optimizados para emprendedores y marcas en Argentina. Elegí tu plan ideal y llevá tu presencia online al siguiente nivel.">
   <meta name="keywords" content="diseño web, páginas web, tiendas online, landing pages, Argentina, ZonaClock">
   <meta name="author" content="ZonaClock" />
+<title>ZonaClock | Sitios Web Profesionales para Emprendedores</title>
 
   <!-- Preload & Google Fonts: Montserrat -->
+	<!-- Google Fonts: Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -47,15 +51,19 @@
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+54-9-11-1234-5678",
+      "telephone": "+54-9-11-6603-2960",
       "contactType": "Customer Service",
       "areaServed": "AR",
       "availableLanguage": ["Spanish"]
     }
   }
+  
   </script>
 
-  <title>ZonaClock | Sitios Web Profesionales para Emprendedores</title>
+  
+	
+	<!-- Pinterest -->
+	<meta name="p:domain_verify" content="df01f08daa27806ae91294fb9949864a"/>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -65,12 +73,38 @@
 
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="css/estilos.css">
+	
+	<!-- Asegurate de tener Font Awesome en tu proyecto -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<!-- Pago de payner -->
+	<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAMhG2l2VIAqEcAElvdQncPXzNodaOOOxgPgP6Y254pOZTKMcf33p3U-EchrnbZniI10lWheGr0qSVw9A&components=hosted-buttons&disable-funding=venmo&currency=USD">
+</script>
+	
+<style>
+		
 
-  <style>
+
+ 
+	  body {
+  font-family: 'Montserrat', sans-serif;
+}
+	  h1, h2, h3, .fw-bold {
+  font-weight: 700;
+}
+h4, h5, h6 {
+  font-weight: 600;
+}
+p, li, a, span {
+  font-weight: 400;
+}
+
+
+	  
     .swiper-slide {
       width: 300px;
       border-radius: 20px;
-      padding: 10px;
+      padding: 50px;
       overflow: hidden;
     }
 
@@ -79,6 +113,49 @@
       height: auto;
       object-fit: cover;
     }
+	  
+	 a:hover i {
+  color: #00acee; /* Azul para Facebook o el color que prefieras */
+   }
+	  .footer-social-padding {
+  padding-bottom: 50px;
+}
+	
+	/* modal de cobro 250 */
+	.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+	
+	
   </style>
 </head>
 
@@ -88,12 +165,12 @@
     <nav class="nav mi-boton">
       <img src="images/zona.png" class="img-logo" alt="Logo de ZonaClock">
       <ul class="nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Portafolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Planes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#SERVICIOS">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#WEBS">Portafolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#PLANES">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#CONTACTOS">Contactos</a></li>
       </ul>
-      <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
+      <button  href="#" class="btn btn-success rounded-pill " data-bs-toggle="modal" data-bs-target="#cotizacionModal">COTIZÁ AHORA!</button>
     </nav>
   </header>
 
@@ -104,10 +181,13 @@
     <section>
       <img src="images/Banner-principal.jpg" class="img-fluid" alt="Banner principal ZonaClock">
       <div class="carousel-caption d-none d-md-block text-start start-50 translate-middle-y top-50 ps-50">
-        <h1 class="bn1">CREAMOS TUS SITIOS WEB</h1>
+        <h1 class="bn1">CREAMOS SITIOS WEB</h1>
         <h2>¡QUE TRABAJAN PARA VOS!</h2>
         <p>24/7 diseño / ecommerce / landing / presentaciones</p>
-        <a href="#" class="btn_02 btn btn-success rounded-pill">Ver más</a>
+        
+		  <button type="button" class="btn_02 btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
+  Pedir Cotización
+</button>
       </div>
     </section>
 
@@ -123,7 +203,7 @@
     <section class="text-center text-white btn_03">
       <h2>MIRÁ LO QUE PODEMOS LOGRAR JUNTOS</h2>
       <p>Clientes felices, sitios funcionando</p>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" id="WEBS">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="images/batman.png" alt="Diseño Batman"></div>
           <div class="swiper-slide"><img src="images/elclubdelamilanesa.png" alt="El Club de la Milanesa"></div>
@@ -136,10 +216,10 @@
     </section>
 
     <!-- Planes -->
-    <section class="text-center text-white btn_03">
+    <section class="text-center text-white btn_03" id="PLANES">
       <h2>PLANES / PRECIOS</h2>
       <div class="container py-5">
-        <div class="row g-4">
+        <div class="row g-5">
           <!-- Básica -->
           <div class="col-12 col-md-4">
             <div class="content-box" style="background: #10110f">
@@ -154,9 +234,16 @@
               <div class="d-flex align-items-center">
                 <h4 class="mb-0">$250</h4><span> USD</span>
               </div>
-              <button class="btn btn-success rounded-pill">LO QUIERO!</button>
+              
+				<button id="openModalBtn" class="btn btn-success rounded-pill">Comprar ahora</button>
+				
+
             </div>
           </div>
+			
+			
+		
+			
 
           <!-- Intermedia -->
           <div class="col-12 col-md-4">
@@ -173,7 +260,7 @@
               <div class="d-flex align-items-center">
                 <h4 class="mb-0">$400</h4><span> USD</span>
               </div>
-              <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
+              <button id="openModalBtn2" class="btn btn-success rounded-pill">Comprar ahora</button>
             </div>
           </div>
 
@@ -191,7 +278,7 @@
               <div class="d-flex align-items-center">
                 <h4 class="mb-0">$500</h4><span> USD</span>
               </div>
-              <button class="btn btn-success rounded-pill">COTIZÁ AHORA!</button>
+              <button id="openModalBtn3" class="btn btn-success rounded-pill">Comprar ahora</button>
             </div>
           </div>
         </div>
@@ -204,18 +291,21 @@
         <div class="col-12 col-md-6 p-0">
           <img src="images/mi_perfil.png" alt="Nelson Vinachi" class="w-100 h-100 object-fit-cover">
         </div>
-        <div class="col-12 col-md-6 content-side">
+        <div class="col-12 col-md-6 content-side" id="nosotros">
           <img src="images/logito.png" alt="Logo Nelson Vinachi" class="logo-img">
           <h4>Hola, soy Nelson Vinachi</h4>
           <p>Diseñador gráfico con más de 10 años de experiencia creando marcas, piezas visuales y sitios web que realmente funcionan.</p>
           <p>Me enfoco en entender tu negocio y tus objetivos para crear soluciones digitales efectivas y visualmente atractivas.</p>
-          <a href="#"><button class="btn_02 btn btn-success rounded-pill">Ver Portafolio</button></a>
+          <a href="https://www.behance.net/Nelsonvinachi"><button class="btn_02 btn btn-success rounded-pill">Ver Portafolio</button></a>
         </div>
       </div>
     </section>
+	  
+	  
+			
 
     <!-- Servicios -->
-    <section class="feature-section py-5">
+    <section class="feature-section py-5" id="SERVICIOS">
       <div class="container">
         <h2 class="text-center mb-5">NUESTROS SERVICIOS</h2>
         <div class="row text-center">
@@ -253,18 +343,18 @@
         <img src="images/nelson.png" class="img-fluid w-50" alt="Nelson Vinachi">
       </div>
       <!-- Menú -->
-      <div class="col-12 col-md-4">
-        <h5>Secciones</h5>
-        <ul class="list-unstyled">
+      <div class="col-12 col-md-3">
+        <h5>&nbsp;</h5>
+        <ul class="list-unstyled opacity-50">
           <li><a href="#" class="footer-link">Inicio</a></li>
-          <li><a href="#" class="footer-link">Servicios</a></li>
-          <li><a href="#" class="footer-link">Productos</a></li>
-          <li><a href="#" class="footer-link">Nosotros</a></li>
-          <li><a href="#" class="footer-link">Contacto</a></li>
+          <li><a href="#SERVICIOS" class="footer-link">Servicios</a></li>
+          <li><a href="#PLANES" class="footer-link">Productos</a></li>
+          <li><a href="#nosotros" class="footer-link">Nosotros</a></li>
+          <li><a href="mailto:davidvinachi@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%20David%2C%20quería%20consultarte%20sobre..." class="footer-link">Contacto</a></li>
         </ul>
       </div>
       <!-- Contacto -->
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4" id="CONTACTOS">
         <img src="images/zona.png" alt="ZonaClock logo" class="img-fluid mb-3 w-50">
         <p>Sitios web a medida para emprendedores y negocios.</p>
         <p><strong>Tel:</strong> +54 9 11 6603 2960 / +54 9 11 6464 1184</p>
@@ -272,23 +362,120 @@
         <p><strong>Email:</strong> davidvinachi@gmail.com</p>
 		 <P>SEGUINOS</P>
 		  
-      <a href="https://www.facebook.com/profile.php?id=61568930481993" target="_blank" class="text-white mx-2">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
-      <a href="https://www.instagram.com/zona_clock/" target="_blank" class="text-white mx-2">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
+      <div class="mb-5"> <!-- Esto agrega 3rem = 48px, muy cerca de 50px -->
+  <a href="https://www.facebook.com/profile.php?id=61568930481993" target="_blank" class="text-white mx-2">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/zona_clock/" target="_blank" class="text-white mx-2">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
     
       </div>
     </div>
   </div>
+	  
+	  
   
-  <!-- Sección de Derechos Reservados y Redes Sociales -->
-  <div class="footer-bottom bg-black py-3 text-center">
+ 
+</footer>
+	 <!-- Sección de Derechos Reservados y Redes Sociales -->
+  <div class="footer-bottom bg-black py-3 text-center text-bg-danger">
     <p class="mb-0">2025 ZonaClock. Todos los derechos reservados.</p>
     
   </div>
-</footer>
+	
+	<!-- Modal oculto -->
+<div id="paypalModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Contenedor donde se carga el botón de PayPal -->
+    <div id="paypal-container-E9ZC5BNW5XE2G"></div>
+  </div>
+</div>
+	
+	<script>
+// Mostrar el modal
+document.getElementById("openModalBtn").onclick = function() {
+  document.getElementById("paypalModal").style.display = "block";
+};
+
+// Cerrar el modal
+document.querySelector(".close").onclick = function() {
+  document.getElementById("paypalModal").style.display = "none";
+};
+
+// Cerrar si hace clic fuera del contenido
+window.onclick = function(event) {
+  if (event.target == document.getElementById("paypalModal")) {
+    document.getElementById("paypalModal").style.display = "none";
+  }
+};
+</script>
+	
+	<script src="https://www.paypal.com/bizcomponents/js/muse/v1.js" async></script>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "E9ZC5BNW5XE2G",
+  }).render("#paypal-container-E9ZC5BNW5XE2G");
+</script>
+	
+	
+	
+	<!-- Modal oculto para el tercer botón -->
+<div id="paypalModal3" class="modal">
+  <div class="modal-content">
+    <span class="close3">&times;</span>
+
+    <!-- Botón estilizado de PayPal -->
+    <style>
+      .pp-EWJQ6A4WP47Z2 {
+        text-align: center;
+        border: none;
+        border-radius: 0.25rem;
+        min-width: 11.625rem;
+        padding: 0 2rem;
+        height: 2.625rem;
+        font-weight: bold;
+        background-color: #FFD140;
+        color: #000000;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        cursor: pointer;
+      }
+    </style>
+	  
+	  <script>
+// Abrir el tercer modal
+document.getElementById("openModalBtn3").onclick = function() {
+  document.getElementById("paypalModal3").style.display = "block";
+};
+
+// Cerrar el tercer modal
+document.querySelector(".close3").onclick = function() {
+  document.getElementById("paypalModal3").style.display = "none";
+};
+
+// Cerrar si hace clic fuera del modal
+window.onclick = function(event) {
+  if (event.target == document.getElementById("paypalModal3")) {
+    document.getElementById("paypalModal3").style.display = "none";
+  }
+};
+</script>
+
+    <form action="https://www.paypal.com/ncp/payment/EWJQ6A4WP47Z2" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+      <input class="pp-EWJQ6A4WP47Z2" type="submit" value="Comprar ahora" />
+      <img src="https://www.paypalobjects.com/images/Debit_Credit.svg" alt="cards" />
+      <section style="font-size: 0.75rem;">
+        Con la tecnología de 
+        <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;" />
+      </section>
+    </form>
+  </div>
+</div>
+	
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -305,6 +492,83 @@
       },
     });
   </script>
+	
+	<!-- Modal oculto para el segundo botón -->
+<div id="paypalModal2" class="modal">
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+
+    <!-- Botón clásico de PayPal con imagen -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="KVRB7J3NRN36S" />
+      <input type="hidden" name="currency_code" value="USD" />
+      <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit"
+        title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+    </form>
+  </div>
+</div>
+	
+	<script>
+// Abrir el segundo modal
+document.getElementById("openModalBtn2").onclick = function() {
+  document.getElementById("paypalModal2").style.display = "block";
+};
+
+// Cerrar el segundo modal
+document.querySelector(".close2").onclick = function() {
+  document.getElementById("paypalModal2").style.display = "none";
+};
+
+// Cerrar si hace clic fuera del segundo modal
+window.onclick = function(event) {
+  if (event.target == document.getElementById("paypalModal2")) {
+    document.getElementById("paypalModal2").style.display = "none";
+  }
+};
+</script>
+	
+	<!-- Modal -->
+<div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="cotizacionModalLabel">Solicitá tu cotización</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://formsubmit.co/davidvinachi@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control bg-secondary border-0 text-white" id="name" name="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control bg-secondary border-0 text-white" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Número de teléfono</label>
+            <input type="tel" class="form-control bg-secondary border-0 text-white" id="phone" name="phone" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje o detalle de la cotización</label>
+            <textarea class="form-control bg-secondary border-0 text-white" id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Enviar cotización</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
 

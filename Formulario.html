@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZonaClock: Creamos sitios web que trabajan para vos. Diseño profesional, tiendas online, landing pages y más.">
+  <meta name="keywords" content="diseño web, páginas web, tiendas online, ecommerce, Argentina, ZonaClock">
+  <meta name="author" content="Nelson Vinachi">
+	<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZonaClock - Formulario</title>
+  <meta name="description" content="Diseñamos sitios web modernos, rápidos y optimizados para emprendedores y marcas en Argentina. Elegí tu plan ideal y llevá tu presencia online al siguiente nivel.">
+  <meta name="keywords" content="diseño web, páginas web, tiendas online, landing pages, Argentina, ZonaClock">
+  <meta name="author" content="ZonaClock" />
+
+  <!-- Preload & Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="styles.min.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ZonaClock",
+    "url": "https://www.zonaclock.com",
+    "logo": "https://www.zonaclock.com/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61568930481993",
+      "https://www.instagram.com/zona_clock/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+54-9-11-6603-2960",
+      "contactType": "Customer Service",
+      "areaServed": "AR",
+      "availableLanguage": ["Spanish"]
+    }
+  }
+  </script>
+
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/estilos.css">
+	
+	<!-- Asegurate de tener Font Awesome en tu proyecto -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .swiper-slide {
+      width: 300px;
+      border-radius: 20px;
+      padding: 50px;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+	  
+	 a:hover i {
+  color: #00acee; /* Azul para Facebook o el color que prefieras */
+   }
+	  .footer-social-padding {
+  padding-bottom: 50px;
+}
+  </style>
+<title>formulario</title>
+</head>
+
+<body class="body"><div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+		<img src="images/zona.png" alt="ZonaClock logo" class="img-fluid mb-5 w-50 ">
+      <div class="card shadow-lg border-0 rounded-4 bg-dark text-white p-4">
+		  
+        <h3 class="text-center mb-4 fw-bold">Solicitá tu cotización</h3>
+        <form action="https://formsubmit.co/davidvinachi@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control bg-secondary border-0 text-white" id="name" name="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control bg-secondary border-0 text-white" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Número de teléfono</label>
+            <input type="tel" class="form-control bg-secondary border-0 text-white" id="phone" name="phone" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje o detalle de la cotización</label>
+            <textarea class="form-control bg-secondary border-0 text-white" id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar cotización</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
