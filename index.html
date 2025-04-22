@@ -6,9 +6,9 @@
   <meta name="description" content="ZonaClock: Creamos sitios web que trabajan para vos. Diseño profesional, tiendas online, landing pages y más.">
   <meta name="keywords" content="diseño web, páginas web, tiendas online, ecommerce, Argentina, ZonaClock">
   <meta name="author" content="Nelson Vinachi">
-	<meta charset="UTF-8" />
+	
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZonaClock - Diseño Web Profesional</title>
+  
   <meta name="description" content="Diseñamos sitios web modernos, rápidos y optimizados para emprendedores y marcas en Argentina. Elegí tu plan ideal y llevá tu presencia online al siguiente nivel.">
   <meta name="keywords" content="diseño web, páginas web, tiendas online, landing pages, Argentina, ZonaClock">
   <meta name="author" content="ZonaClock" />
@@ -84,6 +84,16 @@
 <style>
 		
 
+	.logo-img {
+    margin: 0 auto 20px auto;
+  }
+
+  .btn_02 {
+    width: 100%;
+    max-width: 300px;
+  }
+    
+  }
 
  
 	  body {
@@ -153,7 +163,198 @@ p, li, a, span {
   font-weight: bold;
   cursor: pointer;
 }
+	
+	/* Estructura base */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background-color: #000000;
+  position: relative;
+}
 
+.img-logo {
+  height:40%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #a0fc01;
+  
+}
+
+/* Botón hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+	color: #A0FC01;
+}
+
+.menu-toggle {
+  display: none;
+
+}
+
+	
+	.banner-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.banner-caption {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  max-width: 90%;
+  color: white;
+}
+
+/* Cambiar a imagen vertical en dispositivos móviles */
+@media (max-width: 768px) {
+  .banner-img {
+    content: url("images/Banner-movile.jpg");
+    height: auto;
+  }
+
+  .banner-caption {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translateY(-80%);
+    text-align: center;
+  }
+
+  .banner-caption h1,
+  .banner-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-caption p {
+    font-size: 1rem;
+  }
+}
+	
+
+	
+	
+/* RESPONSIVE - MOBILE */
+@media (max-width: 768px) {
+	
+	.a-nav-item {
+		padding: 0px;
+			
+	}
+	
+	.img-logo {
+		width: 60%;
+	}
+  .nav-menu {
+    display: none;
+    flex-direction: row;
+    background-color: #000000;
+    position: center;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 3px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 5;
+	font-size: 0.8rem;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav-menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+	
+	@media (max-width: 1230px) {
+  .btn-esconder {
+    display: none;
+  }
+}
+
+	
+	.socalo-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.socalo-text {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
+  max-width: 90%;
+}
+
+@media (max-width: 768px) {
+  .socalo-text {
+    font-size: 1.2rem;
+    top: 60%;
+    transform: translate(-50%, -60%);
+
+    text-align: center;
+  }
+}
+	
+	/* Imagen responsiva en la mitad izquierda */
+.half-section img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Contenido del lado derecho */
+.content-side {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .half-section {
+    flex-direction: column;
+  }
+
+  .content-side {
+    padding: 10px 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo-img {
+	  width: 40%;
+    margin: 0 auto 20px auto;
+  }
+
+  .btn_02 {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 	
 	
   </style>
@@ -162,42 +363,49 @@ p, li, a, span {
 <body class="body">
   <!-- HEADER -->
   <header>
-    <nav class="nav mi-boton">
-      <img src="images/zona.png" class="img-logo" alt="Logo de ZonaClock">
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link active" href="#SERVICIOS">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="#WEBS">Portafolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#PLANES">Planes</a></li>
-        <li class="nav-item"><a class="nav-link" href="#CONTACTOS">Contactos</a></li>
-      </ul>
-      <button  href="#" class="btn btn-success rounded-pill " data-bs-toggle="modal" data-bs-target="#cotizacionModal">COTIZÁ AHORA!</button>
-    </nav>
-  </header>
+  <nav class="nav">
+    <img src="images/zona.png" class="img-logo" alt="Logo de ZonaClock">
 
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-menu">
+      <li class="nav-item"><a class="nav-link" href="#SERVICIOS">Servicios</a></li>
+      <li class="nav-item"><a class="nav-link" href="#WEBS">Portafolio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#PLANES">Planes</a></li>
+      <li class="nav-item"><a class="nav-link" href="#CONTACTOS">Contactos</a></li>
+    </ul>
+
+    <button class="btn btn-success rounded-pill btn-esconder">COTIZÁ AHORA!</button>
+  </nav>
+</header>
+	
+	
   <!-- MAIN -->
   <main>
 
     <!-- Banner -->
-    <section>
-      <img src="images/Banner-principal.jpg" class="img-fluid" alt="Banner principal ZonaClock">
-      <div class="carousel-caption d-none d-md-block text-start start-50 translate-middle-y top-50 ps-50">
-        <h1 class="bn1">CREAMOS SITIOS WEB</h1>
-        <h2>¡QUE TRABAJAN PARA VOS!</h2>
-        <p>24/7 diseño / ecommerce / landing / presentaciones</p>
-        
-		  <button type="button" class="btn_02 btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
-  Pedir Cotización
-</button>
-      </div>
-    </section>
+    <section class="banner-section position-relative">
+  <img src="images/Banner-principal.jpg" class="img-fluid w-100 banner-img" alt="Banner principal ZonaClock">
+  
+  <div class="banner-caption position-absolute text-start">
+    <h1 class="bn1">CREAMOS SITIOS WEB</h1>
+    <h2>¡QUE TRABAJAN PARA VOS!</h2>
+    <p>24/7 diseño / ecommerce / landing / presentaciones</p>
+    
+    <button type="button" class="btn_02 btn btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
+      Pedir Cotización
+    </button>
+  </div>
+</section>
 
     <!-- Socalo -->
-    <section class="position-relative text-center">
-      <img src="images/socalo.png" class="img-fluid w-100" alt="Fondo informativo">
-      <div class="position-absolute top-50 start-50 translate-middle text-black-50">
-        <p>Nos encargamos de tu web, así vos te enfocás en vender.</p>
-      </div>
-    </section>
+    <section class="position-relative text-center socalo-section">
+  <img src="images/socalo.png" class="img-fluid w-100" alt="Fondo informativo">
+  <div class="position-absolute top-50 start-50 translate-middle text-black-50 ">
+    <p class="btn-esconder">Nos encargamos de tu web, así vos te enfocás en vender.</p>
+  </div>
+</section>
 
     <!-- Portafolio -->
     <section class="text-center text-white btn_03">
@@ -287,19 +495,21 @@ p, li, a, span {
 
     <!-- Sobre mí -->
     <section class="container-fluid">
-      <div class="row half-section">
-        <div class="col-12 col-md-6 p-0">
-          <img src="images/mi_perfil.png" alt="Nelson Vinachi" class="w-100 h-100 object-fit-cover">
-        </div>
-        <div class="col-12 col-md-6 content-side" id="nosotros">
-          <img src="images/logito.png" alt="Logo Nelson Vinachi" class="logo-img">
-          <h4>Hola, soy Nelson Vinachi</h4>
-          <p>Diseñador gráfico con más de 10 años de experiencia creando marcas, piezas visuales y sitios web que realmente funcionan.</p>
-          <p>Me enfoco en entender tu negocio y tus objetivos para crear soluciones digitales efectivas y visualmente atractivas.</p>
-          <a href="https://www.behance.net/Nelsonvinachi"><button class="btn_02 btn btn-success rounded-pill">Ver Portafolio</button></a>
-        </div>
-      </div>
-    </section>
+  <div class="row half-section">
+    <div class="col-12 col-md-6 p-0">
+      <img src="images/mi_perfil.png" alt="Nelson Vinachi" class=" ">
+    </div>
+    <div class="col-12 col-md-6 content-side" id="nosotros">
+      <img src="images/logito.png" alt="Logo Nelson Vinachi" class="logo-img">
+      <h4>Hola, soy Nelson Vinachi</h4>
+      <p>Diseñador gráfico con más de 10 años de experiencia creando marcas, piezas visuales y sitios web que realmente funcionan.</p>
+      <p>Me enfoco en entender tu negocio y tus objetivos para crear soluciones digitales efectivas y visualmente atractivas.</p>
+      <a href="https://www.behance.net/Nelsonvinachi">
+        <button class="btn_02 btn btn-success rounded-pill">Ver Portafolio</button>
+      </a>
+    </div>
+  </div>
+</section>
 	  
 	  
 			
@@ -427,24 +637,7 @@ window.onclick = function(event) {
   <div class="modal-content">
     <span class="close3">&times;</span>
 
-    <!-- Botón estilizado de PayPal -->
-    <style>
-      .pp-EWJQ6A4WP47Z2 {
-        text-align: center;
-        border: none;
-        border-radius: 0.25rem;
-        min-width: 11.625rem;
-        padding: 0 2rem;
-        height: 2.625rem;
-        font-weight: bold;
-        background-color: #FFD140;
-        color: #000000;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        font-size: 1rem;
-        line-height: 1.25rem;
-        cursor: pointer;
-      }
-    </style>
+   
 	  
 	  <script>
 // Abrir el tercer modal
@@ -489,6 +682,7 @@ window.onclick = function(event) {
       autoplay: {
         delay: 1500,
         disableOnInteraction: false,
+		
       },
     });
   </script>
