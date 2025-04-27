@@ -84,9 +84,7 @@
 <style>
 		
 
-	.logo-img {
-    margin: 0 auto 20px auto;
-  }
+
 
   .btn_02 {
     width: 100%;
@@ -174,9 +172,6 @@ p, li, a, span {
   position: relative;
 }
 
-.img-logo {
-  height:40%;
-}
 
 .nav-menu {
   display: flex;
@@ -260,7 +255,7 @@ p, li, a, span {
 	}
 	
 	.img-logo {
-		width: 60%;
+		width: 50%;
 	}
   .nav-menu {
     display: none;
@@ -335,6 +330,12 @@ p, li, a, span {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+	
+  ..logo-img {
+	 width: 120px;
+	  padding: 0px;
+	  margin: 0px;
+  }
   .half-section {
     flex-direction: column;
   }
@@ -345,10 +346,7 @@ p, li, a, span {
     align-items: center;
   }
 
-  .logo-img {
-	  width: 40%;
-    margin: 0 auto 20px auto;
-  }
+ 
 
   .btn_02 {
     width: 100%;
@@ -497,10 +495,10 @@ p, li, a, span {
     <section class="container-fluid">
   <div class="row half-section">
     <div class="col-12 col-md-6 p-0">
-      <img src="images/mi_perfil.png" alt="Nelson Vinachi" class=" ">
+      <img src="images/mi_perfil.png" alt="Nelson Vinachi" class="">
     </div>
     <div class="col-12 col-md-6 content-side" id="nosotros">
-      <img src="images/logito.png" alt="Logo Nelson Vinachi" class="logo-img">
+      <img src="images/logito.png" alt="Logo Nelson Vinachi" class="w-25 h-auto img-logo">
       <h4>Hola, soy Nelson Vinachi</h4>
       <p>Diseñador gráfico con más de 10 años de experiencia creando marcas, piezas visuales y sitios web que realmente funcionan.</p>
       <p>Me enfoco en entender tu negocio y tus objetivos para crear soluciones digitales efectivas y visualmente atractivas.</p>
